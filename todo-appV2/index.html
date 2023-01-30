@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="header__title">To-do App</h1>
+      <h2 class="header__subtitle">What do you need to do?</h2>
+    </div>
+  </div>
+  
+  <div class="actions">
+    <div class="actions__container">
+      <input id = "search-text" class="input" type="text" placeholder="Filter todos">
+      <label class="checkbox" ><input type="checkbox" id="checkbox">Hide Completed</label>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="todo"></div>
+    <form id="form">
+      <input id = "todo-text" class="input" type="text" name = "todoText" placeholder="Something to do">
+      <button class="button">Add Todo</button>
+    </form>
+  </div>
+  <script src="scripts/uuidv4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+  <script src="scripts/todo-functions.js"></script>
+  <script src="scripts/todo-app.js"></script>
+</body>
+</html>
